@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>re:source roadmap | Join the Launch</title>
+    <title>re:source roadmap | re:LAUNCH</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,700;0,900;1,900&family=STIX+Two+Text:ital@1&display=swap" rel="stylesheet">
     <style>
@@ -18,7 +18,7 @@
         .heading-bold { font-weight: 900; text-transform: uppercase; letter-spacing: -0.04em; }
         .tagline { font-family: 'STIX Two Text', serif; font-style: italic; color: var(--brand-brown); }
         
-        .input-field { border: 3px solid #EEEAEA; background: white; border-radius: 14px; transition: all 0.2s; font-size: 0.95rem; }
+        .input-field { border: 3px solid #EEEAEA; background: white; border-radius: 14px; transition: all 0.2s; font-size: 0.9rem; width: 100%; }
         .input-field:focus { border-color: var(--brand-blue); outline: none; box-shadow: 0 0 0 5px rgba(160, 169, 232, 0.2); }
         
         .btn-primary { 
@@ -34,60 +34,45 @@
         .btn-primary:hover { transform: scale(1.02); box-shadow: 10px 10px 0px var(--brand-brown); }
         .btn-primary:active { transform: translate(6px, 6px); box-shadow: 2px 2px 0px var(--brand-brown); }
         
-        .pill { background: #D2F5CF; border: 2px solid var(--brand-brown); border-radius: 50px; padding: 4px 16px; font-size: 0.75rem; font-weight: 900; text-transform: uppercase; }
+        .logo-container { width: 180px; margin: 0 auto 2rem auto; }
         
-        .logo-container { width: 220px; margin: 0 auto 2.5rem auto; }
-        
-        /* Logic for Hiding/Showing Business Fields */
-        #business-fields {
-            display: none; 
-            opacity: 0;
-            transition: opacity 0.3s ease-in-out;
-        }
-        #business-fields.show {
-            display: block;
-            opacity: 1;
-        }
+        #business-fields { display: none; opacity: 0; transition: opacity 0.3s ease-in-out; }
+        #business-fields.show { display: block; opacity: 1; }
 
         @keyframes pulse-soft {
-            0% { opacity: 1; }
-            50% { opacity: 0.8; }
-            100% { opacity: 1; }
+            0% { opacity: 1; } 50% { opacity: 0.8; } 100% { opacity: 1; }
         }
         .redirecting { animation: pulse-soft 1s infinite; pointer-events: none; background-color: var(--brand-blue) !important; }
     </style>
 </head>
 <body class="flex flex-col items-center justify-center min-h-screen p-6">
 
-    <div class="max-w-xl w-full py-12">
-        
+    <div class="max-w-xl w-full py-8">
         <div class="logo-container">
-            <img src="https://resourceroadmap.com/wp-content/uploads/2020/01/Group-13.svg" alt="re:source roadmap" class="w-full h-auto drop-shadow-sm">
+            <img src="https://resourceroadmap.com/wp-content/uploads/2020/01/Group-13.svg" alt="re:source roadmap" class="w-full h-auto">
         </div>
 
-        <div class="mb-10 text-center">
+        <div class="mb-10 text-center px-4">
             <h1 class="text-5xl md:text-6xl heading-bold leading-[0.85] mb-4 uppercase">
-                JOIN THE <br><span class="italic text-[#E96B60]">LAUNCH</span> LIST
+                JOIN THE <br><span class="italic text-[#E96B60]">re:LAUNCH</span> LIST
             </h1>
-            <p class="tagline text-xl md:text-2xl">Less searching, More finding</p>
+            <p class="tagline text-xl md:text-2xl mb-4">Less searching, more finding!</p>
+            <p class="text-sm font-bold leading-relaxed max-w-md mx-auto opacity-80 uppercase tracking-tighter">
+                You gave us great feedback; now we’re implementing the upgrades. Be the first to know when the updates go live!
+            </p>
         </div>
 
         <script type="text/javascript">var submitted=false;</script>
         <iframe name="hidden_iframe" id="hidden_iframe" style="display:none;" onload="if(submitted) { window.location='https://resourceroadmap.com'; }"></iframe>
 
         <div class="bg-white rounded-[3rem] p-8 md:p-10 border-[4px] border-[#4B1900] shadow-[20px_20px_0px_#A0A9E8]">
-            <div class="flex justify-between items-center mb-8">
-                <h3 class="font-black uppercase tracking-widest text-[11px] opacity-50">Early Access Form</h3>
-                <span class="pill">2026 OFFICIAL</span>
-            </div>
-
             <form action="https://docs.google.com/forms/d/e/1FAIpQLSc8Doe1OvybtffvuwY-fzxEatR6HzZgrl8ku_Al6FAcJCrFog/formResponse" 
                   method="post" 
                   target="hidden_iframe" 
-                  onsubmit="submitted=true; document.getElementById('submit-btn').innerText='SENDING TO MAP...'; document.getElementById('submit-btn').classList.add('redirecting');" 
+                  onsubmit="submitted=true; document.getElementById('submit-btn').innerText='UPDATING THE MAP...'; document.getElementById('submit-btn').classList.add('redirecting');" 
                   class="space-y-5">
                 
-                <input type="text" name="entry.1413581890" placeholder="FULL NAME" required class="input-field w-full p-5 font-bold uppercase">
+                <input type="text" name="entry.1413581890" placeholder="FULL NAME" required class="input-field p-5 font-bold uppercase">
 
                 <div class="grid grid-cols-1 md:grid-cols-2 gap-5">
                     <input type="email" name="entry.274131027" placeholder="EMAIL" required class="input-field p-5 font-bold uppercase">
@@ -95,9 +80,9 @@
                 </div>
 
                 <div class="grid grid-cols-3 gap-3">
-                    <input type="text" name="entry.1460596506" placeholder="CITY" required class="input-field p-5 font-bold uppercase col-span-1">
-                    <input type="text" name="entry.1286831269" placeholder="STATE/PROVINCE" required class="input-field p-5 font-bold uppercase col-span-1">
-                    <input type="text" name="entry.267329525" placeholder="ZIP/POSTAL CODE" required class="input-field p-5 font-bold uppercase col-span-1">
+                    <input type="text" name="entry.1460596506" placeholder="CITY" required class="input-field p-5 font-bold uppercase">
+                    <input type="text" name="entry.1286831269" placeholder="ST" required class="input-field p-5 font-bold uppercase">
+                    <input type="text" name="entry.267329525" placeholder="ZIP" required class="input-field p-5 font-bold uppercase">
                 </div>
 
                 <div class="pt-6 mt-4 border-t-4 border-dashed border-gray-100">
@@ -116,8 +101,16 @@
                     </div>
                     
                     <div id="business-fields" class="space-y-4 mt-4">
-                        <input type="text" id="biz-name" name="entry.932804541" placeholder="BUSINESS NAME" class="input-field w-full p-5 font-bold uppercase">
-                        <input type="text" id="biz-addr" name="entry.2119001701" placeholder="BUSINESS ADDRESS (STREET, CITY, STATE/PROVINCE, ZIP/POSTAL CODE)" class="input-field w-full p-5 font-bold uppercase text-[10px] placeholder:text-gray-400">
+                        <input type="text" id="biz-name" name="entry.932804541" placeholder="BUSINESS NAME" class="input-field p-4 font-bold uppercase">
+                        <input type="text" id="biz-street" name="entry.2119001701" placeholder="STREET ADDRESS" class="input-field p-4 font-bold uppercase">
+                        <div class="grid grid-cols-2 gap-3">
+                            <input type="text" id="biz-city" name="entry.131504771" placeholder="CITY" class="input-field p-4 font-bold uppercase">
+                            <input type="text" id="biz-state" name="entry.531259642" placeholder="STATE" class="input-field p-4 font-bold uppercase">
+                        </div>
+                        <div class="grid grid-cols-2 gap-3">
+                            <input type="text" id="biz-country" name="entry.223251478" placeholder="COUNTRY" class="input-field p-4 font-bold uppercase">
+                            <input type="text" id="biz-zip" name="entry.489513661" placeholder="ZIP CODE" class="input-field p-4 font-bold uppercase">
+                        </div>
                     </div>
                 </div>
 
@@ -128,30 +121,28 @@
             </form>
         </div>
 
-        <footer class="mt-16 text-center">
-            <p class="text-[10px] font-black uppercase tracking-[0.2em] opacity-30">© 2026 re:source roadmap</p>
+        <footer class="mt-12 text-center space-y-6">
+            <a href="https://resourceroadmap.com" class="text-xs font-black uppercase tracking-widest underline decoration-2 underline-offset-4 hover:text-[#E96B60] transition-colors">
+                Continue to current Beta Site →
+            </a>
+            <p class="text-[10px] font-black uppercase tracking-[0.2em] opacity-30 italic">
+                re:source roadmap — locally rooted.
+            </p>
         </footer>
     </div>
 
     <script>
         function toggleBusiness(show) {
             const fields = document.getElementById('business-fields');
-            const bizName = document.getElementById('biz-name');
-            const bizAddr = document.getElementById('biz-addr');
-            
+            const inputs = fields.querySelectorAll('input');
             if (show) {
                 fields.classList.add('show');
-                bizName.required = true;
-                bizAddr.required = true;
+                inputs.forEach(input => input.required = true);
             } else {
                 fields.classList.remove('show');
-                bizName.required = false;
-                bizAddr.required = false;
-                bizName.value = "";
-                bizAddr.value = "";
+                inputs.forEach(input => { input.required = false; input.value = ""; });
             }
         }
     </script>
-
 </body>
 </html>
